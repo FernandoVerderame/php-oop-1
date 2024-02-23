@@ -8,6 +8,16 @@ class Movie
     public $overview;
     public $language;
     public $vote;
+
+    // Construct function
+    public function __construct($id, $title, $overview, $language, $vote) 
+    {
+        $this->id = $id;
+        $this->title = $title;
+        $this->overview = $overview;
+        $this->language = $language;
+        $this->vote = $vote;
+    }
 };
 
 
