@@ -18,6 +18,12 @@ class Movie
         $this->language = $language;
         $this->vote = $vote;
     }
+
+    // Abstract function
+    public function getAbstract() 
+    {
+        return substr($this->overview, 0, 50);
+    }
 };
 
 
